@@ -50,9 +50,9 @@ const commentData = [
         user_id: 2,
         post_id: 5,
         comment_text: "Qquo minus id quod maxime placeat facere possimus"
-    },
+    }
 ]
 
-const seedUsers = () => Comment.bulkCreate(commentData);
+const seedComments = () => Comment.bulkCreate(commentData);
 
-module.exports = seedUsers;
+module.exports = seedComments;

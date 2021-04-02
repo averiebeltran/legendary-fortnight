@@ -1,6 +1,6 @@
 const {User} = require("../models");
 
-const userDate = [
+const userData = [
     {
         username: "khloe_kardashian",
         github: "khloek",

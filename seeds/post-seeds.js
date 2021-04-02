@@ -1,6 +1,6 @@
 const {Post} = require("../models");
 
-const PostData = [
+const postData = [
     {
         title: "Lorem Ipsum 1",
         post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor. Viverra accumsan in nisl nisi scelerisque eu. Duis at tellus at urna condimentum. Malesuada nunc vel risus commodo viverra. Augue interdum velit euismod in pellentesque massa placerat. Libero volutpat sed cras ornare arcu dui vivamus arcu. In eu mi bibendum neque egestas congue quisque egestas diam. Id diam maecenas ultricies mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis. Nisl pretium fusce id velit ut tortor. Tincidunt ornare massa eget egestas purus viverra",
