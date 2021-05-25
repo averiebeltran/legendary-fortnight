@@ -11,9 +11,42 @@
 </head>
 
 <body>
-    <header>
-        <h1>Awesome tech blog: a tech blog</h1>
-        <nav></nav>
+    <header class="flex">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="has-text-black px-3 py-3 has-text-weight-bold">Awesome Tech Blog: a tech blog</h1>
+            </div>
+
+            <div id="navbarBasicExample" class="blog-navbar-menu">
+                {{#if loggedIn}}
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/">Home</a>
+                    <a class="navbar-item" href="/dashboard">Dashboard</a>
+                    <a class="navbar-item" href="/dashboard/create/">Create Post</a>
+                </div>
+                {{/if}}
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            {{#if loggedIn}}
+                            <a class="button is-light">Logout</a>
+                            {{else}}
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">Log in</a>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
     </header>
 
     <main>{{{ body }}}</main>
