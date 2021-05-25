@@ -23,7 +23,7 @@
                     <a class="navbar-item" href="/">Home</a>
                     <a class="navbar-item" href="/dashboard">Dashboard</a>
                     <a class="navbar-item" href="/dashboard/create/">Create Post</a>
-                    <a class="button is-light">Logout</a>
+                    <a id="logout" class="button is-danger">Logout</a>
                 {{else}}
                     <a class="button is-primary" href="/signup">
                         <strong>Sign up</strong>
@@ -38,5 +38,8 @@
     <main>{{{ body }}}</main>
 
     <footer></footer>
+    {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 </html>
